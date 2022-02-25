@@ -1,3 +1,5 @@
+/*Lien entre le produit et la page*/
+
 var str = window.location.href;
 var url = new URL(str);
 var idProduct = url.searchParams.get("id");
@@ -9,7 +11,7 @@ const quantityPicked = document.querySelector("#quantity");
 
 getArticle();
 
-// Récupération des articles de l'API
+/* Récupération des articles de l'API*/
 function getArticle() {
     fetch("http://localhost:3000/api/products/" + idProduct)
     .then((res) => {
