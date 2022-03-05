@@ -60,3 +60,7 @@ function getPost(article){
     }
     addToCart(article);
 }
+
+//Gestion du panier
+function addToCart(article) {
+    const btn_envoyerPanier = document.querySelector("#addToCart");}
